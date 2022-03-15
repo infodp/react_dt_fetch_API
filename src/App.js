@@ -3,7 +3,6 @@ import 'styled-components'
 import React, {useState, useEffect} from 'react';
 import DataTable , {createTheme} from 'react-data-table-component';
 
-
 const App = () => {
   //1 - Configurar los hooks
   const [users, setUsers] = useState( [] )
@@ -76,7 +75,7 @@ const App = () => {
      <DataTable 
       columns={columns}
       data={users}
-      //theme='custom'
+      //theme='custom' //habilitar esta linea y descomentar createTheme()
       pagination
      />
     </div>
